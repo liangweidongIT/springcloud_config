@@ -4,12 +4,12 @@ spring:
   - test 
 ---
 spring:
-  prifiles: dev
+  profiles: dev
   application:
     name:  springcloud-config-dev
  ---
 spring:
-  prifiles: test
+  profiles: test
   application:
     name:  springcloud-config-test
  
