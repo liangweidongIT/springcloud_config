@@ -6,11 +6,11 @@ spring:
 spring:
   profiles: dev
   application:
-    name:  springcloud-config-dev22
+    name:  springcloud-config-dev
 ---
 spring:
   profiles: test
   application:
-    name:  springcloud-config-test22
+    name:  springcloud-config-test
  
 
