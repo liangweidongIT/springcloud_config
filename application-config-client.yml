@@ -8,12 +8,12 @@ spring:
   application:
     name:  springcloud-config-dev
 server:  
-  prot: 3355
+  port: 3355
 ---
 spring:
   profiles: test
   application:
     name:  springcloud-config-test
 server:  
-  prot: 3366
+  port: 3366
 
