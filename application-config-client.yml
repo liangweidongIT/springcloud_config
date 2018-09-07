@@ -9,6 +9,10 @@ spring:
     name:  springcloud-config-dev
 server:  
   port: 3355
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
 ---
 spring:
   profiles: test
@@ -16,4 +20,8 @@ spring:
     name:  springcloud-config-test
 server:  
   port: 3366
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
 
