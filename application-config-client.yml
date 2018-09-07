@@ -13,6 +13,9 @@ eureka:
   client: 
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka
+  instance: 
+    instance-id: provider-dev
+    prefer-ip-address: true
 ---
 spring:
   profiles: test
@@ -24,4 +27,7 @@ eureka:
   client: 
     service-url: 
       defaultZone: http://eureka7002.com:7002/eureka
+  instance: 
+    instance-id: provider-test
+    prefer-ip-address: true
 
