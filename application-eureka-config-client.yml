@@ -1,0 +1,35 @@
+spring: 
+  profiles: 
+  active: 
+  - test 
+---
+spring:
+  profiles: dev
+  application:
+    name:  springcloud-config-dev
+server: 
+  port: 7001
+eureka: 
+  instance: 
+    hostname: autoconfig-eureka7001.com
+  client: 
+    register-with-eureka: false
+    fetch-registry: false
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka/
+---
+spring:
+  profiles: test
+  application:
+    name:  springcloud-config-test
+server: 
+  port: 7002
+eureka: 
+  instance: 
+    hostname: autoconfig-eureka7002.com
+  client: 
+    register-with-eureka: false
+    fetch-registry: false
+    service-url: 
+      defaultZone: http://eureka7002.com:7002/eureka/
+
